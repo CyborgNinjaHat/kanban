@@ -1,0 +1,10 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+
+allowBuilds:
+  esbuild: true
+
+catalog:
+  '@types/node': ^24.13.3
+  typescript: ^7.0.2

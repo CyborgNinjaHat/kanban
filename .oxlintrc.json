@@ -1,0 +1,87 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": [
+    "eslint",
+    "oxc",
+    "unicorn",
+    "typescript",
+    "import",
+    "promise",
+    "node",
+    "react",
+    "react-perf",
+    "jsx-a11y"
+  ],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error",
+    "perf": "error"
+  },
+  "rules": {
+    "eqeqeq": "error",
+    "curly": "error",
+    "prefer-const": "error",
+    "no-var": "error",
+    "typescript/no-misused-promises": "error",
+    "typescript/no-unsafe-argument": "error",
+    "typescript/no-unsafe-assignment": "error",
+    "typescript/no-unsafe-call": "error",
+    "typescript/no-unsafe-member-access": "error",
+    "typescript/no-unsafe-return": "error",
+    "typescript/switch-exhaustiveness-check": "error",
+    "typescript/consistent-type-imports": "error",
+    "typescript/no-explicit-any": "error",
+    "promise/catch-or-return": "error",
+    "import/no-cycle": "error",
+    "import/no-duplicates": "error",
+    "import/no-unassigned-import": [
+      "error",
+      {
+        "allow": ["dotenv/config", "**/*.css"]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["apps/web/**/*.{ts,tsx}"],
+      "env": { "browser": true },
+      "plugins": [
+        "eslint",
+        "typescript",
+        "oxc",
+        "unicorn",
+        "import",
+        "promise",
+        "react",
+        "react-perf",
+        "jsx-a11y"
+      ],
+      "rules": {
+        "react/rules-of-hooks": "error",
+        "react/self-closing-comp": "error",
+        "react/react-in-jsx-scope": "off"
+      }
+    },
+    {
+      "files": ["apps/api/**/*.ts", "packages/**/*.ts", "**/*.config.ts"],
+      "env": { "node": true },
+      "plugins": ["eslint", "typescript", "oxc", "unicorn", "import", "promise", "node"],
+      "rules": {
+        "node/handle-callback-err": "error",
+        "node/no-new-require": "error",
+        "node/no-path-concat": "error",
+        "unicorn/prefer-node-protocol": "error"
+      }
+    }
+  ],
+  "options": {
+    "typeAware": true
+  },
+  "ignorePatterns": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/.turbo/**",
+    "**/*.tsbuildinfo",
+    "**/generated/**"
+  ]
+}
