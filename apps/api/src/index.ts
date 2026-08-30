@@ -5,8 +5,14 @@ import { showRoutes } from 'hono/dev';
 import { logger } from 'hono/logger';
 import { NotFoundError } from './common/error/app-error.js';
 import { errorHandler } from './middlewares/error-handler.js';
+import { BoardRoutes } from './modules/boards/board.routes.js';
+import { CardRoutes } from './modules/cards/card.routes.js';
+import { ColumnRoutes } from './modules/columns/column.routes.js';
 
 const app = new Hono();
+const boardRoutes = new BoardRoutes();
+const columnRoutes = new ColumnRoutes();
+const cardRoutes = new CardRoutes();
 
 app.use('*', cors());
 
@@ -15,6 +21,10 @@ app.use(logger());
 app.get('/health', (context) => {
   return context.json({ status: 'ok' }, 200);
 });
+
+boardRoutes.mountTo(app, '/boards');
+columnRoutes.mountTo(app, '/boards/:boardId/columns');
+cardRoutes.mountTo(app, '/boards/:boardId/columns/:columnId/cards');
 
 app.notFound(() => {
   throw new NotFoundError('Route not found');
