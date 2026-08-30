@@ -1,0 +1,22 @@
+{
+  "name": "@kanban/contracts",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check-types": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@kanban/typescript-config": "workspace:*",
+    "@types/node": "catalog:",
+    "tsx": "catalog:"
+  }
+}
