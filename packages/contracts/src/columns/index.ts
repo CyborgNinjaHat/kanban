@@ -6,3 +6,4 @@ export * from './schemas/get-column.schema.js';
 export * from './schemas/list-columns.schema.js';
 export * from './schemas/reorder-column.schema.js';
 export * from './schemas/update-column.schema.js';
+export * from './types.js';
