@@ -1,4 +1,4 @@
-import { pgTable, uuid, varchar, text, timestamp, uniqueIndex } from 'drizzle-orm/pg-core';
+import { pgTable, uuid, varchar, timestamp, uniqueIndex } from 'drizzle-orm/pg-core';
 
 export const boardsTable = pgTable('boards', {
   id: uuid().primaryKey().defaultRandom(),
@@ -39,7 +39,7 @@ export const cardsTable = pgTable(
       .notNull()
       .references(() => columnsTable.id, { onDelete: 'cascade' }),
     title: varchar({ length: 255 }).notNull(),
-    description: text().notNull().default(''),
+    description: varchar({ length: 255 }).notNull(),
     rank: varchar({ length: 255 }).notNull(),
     createdAt: timestamp('created_at').notNull().defaultNow(),
     updatedAt: timestamp('updated_at')
