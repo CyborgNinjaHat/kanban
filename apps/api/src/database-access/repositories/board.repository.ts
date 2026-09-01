@@ -27,7 +27,7 @@ export class BoardRepository extends BaseRepository {
     const { search, sortBy = 'createdAt', sortOrder = 'desc', limit, offset } = params;
 
     const items = await this.db.query.boardsTable.findMany({
-      where: search ? { title: { ilike: `%${search}%` } } : undefined,
+      ...(search ? { where: { title: { ilike: `%${search}%` } } } : {}),
       orderBy: (fields, { asc, desc }) => {
         const column = fields[sortBy];
         return sortOrder === 'asc' ? asc(column) : desc(column);
