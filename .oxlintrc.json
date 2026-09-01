@@ -82,6 +82,7 @@
     "**/dist/**",
     "**/.turbo/**",
     "**/*.tsbuildinfo",
-    "**/generated/**"
+    "**/generated/**",
+    "**/components/ui/**"
   ]
 }
