@@ -1,0 +1,51 @@
+{
+  "name": "web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "check-types": "tsc -b --pretty false",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@dnd-kit/abstract": "catalog:",
+    "@dnd-kit/dom": "catalog:",
+    "@dnd-kit/helpers": "catalog:",
+    "@dnd-kit/react": "catalog:",
+    "@fontsource-variable/figtree": "catalog:",
+    "@hookform/resolvers": "catalog:",
+    "@kanban/contracts": "workspace:*",
+    "@tanstack/react-query": "catalog:",
+    "class-variance-authority": "catalog:",
+    "clsx": "catalog:",
+    "lucide-react": "catalog:",
+    "next-themes": "catalog:",
+    "radix-ui": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "react-hook-form": "catalog:",
+    "react-router": "catalog:",
+    "shadcn": "catalog:",
+    "sonner": "catalog:",
+    "tailwind-merge": "catalog:",
+    "tailwindcss": "catalog:",
+    "tw-animate-css": "catalog:",
+    "zod": "catalog:",
+    "zustand": "catalog:"
+  },
+  "devDependencies": {
+    "@babel/core": "catalog:",
+    "@kanban/typescript-config": "workspace:*",
+    "@rolldown/plugin-babel": "catalog:",
+    "@tailwindcss/vite": "catalog:",
+    "@types/babel__core": "catalog:",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@vitejs/plugin-react": "catalog:",
+    "babel-plugin-react-compiler": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:"
+  }
+}
