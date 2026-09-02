@@ -4,6 +4,7 @@ import { cors } from 'hono/cors';
 import { showRoutes } from 'hono/dev';
 import { logger } from 'hono/logger';
 import { NotFoundError } from './common/error/app-error.js';
+import { env } from './config/env.js';
 import { errorHandler } from './middlewares/error-handler.js';
 import { BoardRoutes } from './modules/boards/board.routes.js';
 import { CardRoutes } from './modules/cards/card.routes.js';
@@ -39,7 +40,7 @@ showRoutes(app, {
 serve(
   {
     fetch: app.fetch,
-    port: 3000,
+    port: env.PORT,
   },
   (info) => {
     console.log(`Server is running on http://localhost:${info.port}`);
