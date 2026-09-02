@@ -79,7 +79,7 @@ catalogs:
       specifier: ^1.0.0-rc.5-ab785fc
       version: 1.0.0-rc.5-ab785fc
     drizzle-orm:
-      specifier: ^1.0.0-rc.5-ab785fc
+      specifier: ^1.0.0-rc.5-169397b
       version: 1.0.0-rc.5-ab785fc
     hono:
       specifier: ^4.13.5
