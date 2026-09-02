@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "check-types": "tsc -b --pretty false",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -13,19 +14,25 @@
     "@dnd-kit/helpers": "catalog:",
     "@dnd-kit/react": "catalog:",
     "@fontsource-variable/figtree": "catalog:",
+    "@hookform/resolvers": "catalog:",
     "@kanban/contracts": "workspace:*",
     "@tanstack/react-query": "catalog:",
     "class-variance-authority": "catalog:",
     "clsx": "catalog:",
     "lucide-react": "catalog:",
+    "next-themes": "catalog:",
     "radix-ui": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:",
+    "react-hook-form": "catalog:",
     "react-router": "catalog:",
     "shadcn": "catalog:",
+    "sonner": "catalog:",
     "tailwind-merge": "catalog:",
     "tailwindcss": "catalog:",
-    "tw-animate-css": "catalog:"
+    "tw-animate-css": "catalog:",
+    "zod": "catalog:",
+    "zustand": "catalog:"
   },
   "devDependencies": {
     "@babel/core": "catalog:",
