@@ -177,7 +177,7 @@ catalogs:
       specifier: ^17.4.2
       version: 17.4.2
     drizzle-kit:
-      specifier: ^1.0.0-rc.5-ab785fc
+      specifier: ^1.0.0-rc.5-5935859
       version: 1.0.0-rc.5-ab785fc
     drizzle-orm:
       specifier: ^1.0.0-rc.5-169397b
