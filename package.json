@@ -25,8 +25,8 @@
     "lint-staged": "^17.4.1",
     "oxfmt": "^0.66.0",
     "oxlint": "^1.81.0",
-    "oxlint-tsgolint": "^7.0.2001",
-    "turbo": "^2.10.12",
+    "oxlint-tsgolint": "^7.0.2002",
+    "turbo": "^2.10.13",
     "typescript": "catalog:"
   },
   "engines": {

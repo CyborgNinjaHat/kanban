@@ -18,12 +18,12 @@ catalog:
   pg: ^8.23.0
   drizzle-orm: ^1.0.0-rc.5-169397b
   drizzle-kit: ^1.0.0-rc.5-ab785fc
-  hono: ^4.13.5
+  hono: ^4.13.8
   '@hono/node-server': ^2.1.1
   '@hono/zod-validator': ^0.9.1
   '@dalet-oss/lexorank': ^1.1.5
-  '@babel/core': ^8.0.1
-  '@rolldown/plugin-babel': ^0.2.3
+  '@babel/core': ^8.0.5
+  '@rolldown/plugin-babel': ^0.2.4
   '@vitejs/plugin-react': ^6.1.0
   '@tailwindcss/vite': ^4.3.3
   '@dnd-kit/react': ^0.5.0
