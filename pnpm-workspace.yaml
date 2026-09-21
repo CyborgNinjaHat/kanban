@@ -6,7 +6,7 @@ allowBuilds:
   esbuild: true
 
 catalog:
-  '@types/node': ^24.13.3
+  '@types/node': ^26.6.1
   '@types/pg': ^8.23.1
   '@types/babel__core': ^7.20.5
   '@types/react': ^19.2.18
